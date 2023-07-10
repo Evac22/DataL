@@ -10,8 +10,12 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataSchemaLibrary
 build_property.RootNamespace = DataSchemaLibrary
 build_property.ProjectDir = C:\Users\Vlad\OneDrive\Рабочий стол\Data Schema for Library\DataSchemaLibrary\DataSchemaLibrary\
-build_property.RazorLangVersion = 6.0
+build_property.RazorLangVersion = 2.1
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Vlad\OneDrive\Рабочий стол\Data Schema for Library\DataSchemaLibrary\DataSchemaLibrary
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Vlad/OneDrive/Рабочий стол/Data Schema for Library/DataSchemaLibrary/DataSchemaLibrary/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
