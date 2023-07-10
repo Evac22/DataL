@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSchemaLibrary", "DataSchemaLibrary\DataSchemaLibrary.csproj", "{3A5D381A-1661-412D-920D-2DF8E7CF3B4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A5D381A-1661-412D-920D-2DF8E7CF3B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5D381A-1661-412D-920D-2DF8E7CF3B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5D381A-1661-412D-920D-2DF8E7CF3B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5D381A-1661-412D-920D-2DF8E7CF3B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C687379-1281-4871-B79E-86B3C16DEE4E}
+	EndGlobalSection
+EndGlobal
