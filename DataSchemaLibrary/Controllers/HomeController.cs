@@ -8,6 +8,7 @@ namespace DataSchemaLibrary.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Message = "Welcome to the Home Page";
             return View();
         }
     }

@@ -1,6 +1,6 @@
-﻿<h1>Welcome to the Home Page</h1>
-<p>This is the content of the home page.</p>
+﻿@{
+    ViewData["Title"] = "Home";
+}
 
-<form action="/Books/GetAll" method="get">
-    <button type="submit">Get All Books</button>
-</form>
+<h1>@ViewBag.Message</h1>
+<p>This is the content of the home page.</p>

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using FluentValidation.AspNetCore;
 using AutoMapper;
 using DataSchemaLibrary.DataAccess;
-//using DataSchemaLibrary.Middleware;
+using DataSchemaLibrary.Middleware;
 using DataSchemaLibrary.Controllers;
 
 namespace DataSchemaLibrary
@@ -28,6 +28,7 @@ namespace DataSchemaLibrary
                     fv.DisableDataAnnotationsValidation = true;
                 });
 
+            builder.Services.AddControllers();
             builder.Services.AddAutoMapper(typeof(Program));
 
             var app = builder.Build();
@@ -45,14 +46,17 @@ namespace DataSchemaLibrary
             app.UseHttpsRedirection();
             app.UseRouting();
 
-            //app.UseMiddleware<ExceptionHandlerMiddleware>();
-            //app.UseMiddleware<LoggingMiddleware>();
+            app.UseMiddleware<ExceptionHandlerMiddleware>();
+            app.UseMiddleware<LoggingMiddleware>();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                //endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
            
