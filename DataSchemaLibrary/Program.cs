@@ -6,7 +6,8 @@ using Microsoft.Extensions.Hosting;
 using FluentValidation.AspNetCore;
 using AutoMapper;
 using DataSchemaLibrary.DataAccess;
-using DataSchemaLibrary.Middleware;
+//using DataSchemaLibrary.Middleware;
+using DataSchemaLibrary.Controllers;
 
 namespace DataSchemaLibrary
 {
@@ -34,7 +35,6 @@ namespace DataSchemaLibrary
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-               
             }
             else
             {
@@ -45,8 +45,8 @@ namespace DataSchemaLibrary
             app.UseHttpsRedirection();
             app.UseRouting();
 
-            app.UseMiddleware<ExceptionHandlerMiddleware>();
-            app.UseMiddleware<LoggingMiddleware>();
+            //app.UseMiddleware<ExceptionHandlerMiddleware>();
+            //app.UseMiddleware<LoggingMiddleware>();
 
             app.UseAuthorization();
 
@@ -54,6 +54,8 @@ namespace DataSchemaLibrary
             {
                 endpoints.MapControllers();
             });
+
+           
 
             app.Run();
         }

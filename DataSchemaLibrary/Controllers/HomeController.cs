@@ -1,10 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-public class HomeController : ControllerBase
+namespace DataSchemaLibrary.Controllers
 {
-    public IActionResult Index()
+    [ApiController]
+    [Route("[controller]")]
+    public class HomeController : Controller
     {
-        var data = new { Message = "Welcome to the Home Page" };
-        return Ok(data);
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
+
